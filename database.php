@@ -1,13 +1,12 @@
 <?php
-
-    $server = "mysql://eu-cdbr-west-02.cleardb.net/heroku_36d91ccb9e97f8f?reconnect=true";
-    $utente = "bf4762acadbdf4";
+    $server = "eu-cdbr-west-02.cleardb.net/heroku_36d91ccb9e97f8f";
+    $username = "bf4762acadbdf4";
     $password = "48baa9aa";
-//    $database = "user";
+    $database = "heroku_36d91ccb9e97f8f";
 
-    $connection = mysqli_connect($server, $utente, $password)
+    $connection = new mysqli($server, $username, $password, $database);
 
-
+    echo "Connected successfully";
 
 
 ?>
