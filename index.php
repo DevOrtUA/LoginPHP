@@ -6,6 +6,7 @@
 </head>
 <body>
 
+    <h1>Benvenuto</h1>
     <form action="login.php" method="post">
 
         <input type="text" name="username">
