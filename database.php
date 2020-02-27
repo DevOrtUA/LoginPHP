@@ -5,7 +5,7 @@
     $password = "48baa9aa";
     $database = "user";
 
-    $connessione = mysqli_connect($server, $utente, $password, $database)
+    $connection = mysqli_connect($server, $utente, $password, $database)
 
 
 

@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form action="Login.php" method="post">
+    <form action="login.php" method="post">
 
         <input type="text" name="username">
 
