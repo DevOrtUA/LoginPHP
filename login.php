@@ -1,4 +1,5 @@
 <?php include  'database.php' ?>
+<?php session_start(); ?>
 
 <?php
 
@@ -20,9 +21,20 @@ if(isset($_POST['login'])) {
 
     while ($row = mysqli_fetch_array($trova_utente)) {
 
-        //$idUser = $row['id'];
-        $username = $row['username'];
-        $password = $row['password'];
+        $username_db = $row['username'];
+        $password_db = $row['password'];
+        $role_db = $row['role'];
     }
+
+    if($username === $username_db && $password === $password_db) {
+
+        $_SESSION['username'] = $username_db;
+        $_SESSION['password'] = $password_db;
+        $_SESSION['role'] = $role_db;
+        header('Location:area_riservata.php');
+    }else {
+        header('Location:index.php');
+    }
+
 }
 ?>
