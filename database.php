@@ -1,6 +1,6 @@
 <?php
 
-    $server = "eu-cdbr-west-02.cleardb.net/heroku_36d91ccb9e97f8f";
+    $server = "eu-cdbr-west-02.cleardb.net";
     $username = "bf4762acadbdf4";
     $password = "48baa9aa";
     $database = "heroku_36d91ccb9e97f8f";
